@@ -9,14 +9,14 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 // Code SearchableMovieReviewsContainer Here
 export default class SearchableMovieReviewsContainer extends Component {
   state = {
-    search: '',
+    searchTerm: '',
     reviews: []
   }
 
   handleSubmit = event => {
         event.preventDefault();
 
-        fetch(URL.concat('&query=',this.state.search))
+        fetch(URL.concat('&query=',this.state.searchTerm))
         .then(res => res.json())
         .then(data => this.setState({ reviews: data.results }));
   }
