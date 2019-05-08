@@ -34,7 +34,7 @@ export default class SearchableMovieReviewsContainer extends React.PureComponent
               value={this.state.searchTerm}/>
           <button type="submit">Submit</button>
         </form>
-        <MovieReviews />
+        <MovieReviews reviews={this.state.reviews} />
       </div>
     );
   }
