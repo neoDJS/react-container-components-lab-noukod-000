@@ -13,6 +13,14 @@ export default class SearchableMovieReviewsContainer extends Component {
     reviews: []
   }
 
+  handleSubmit = event => {
+        event.preventDefault();
+
+        fetch(URL.concat('&query=',this.state.search))
+        .then(res => res.json())
+        .then(jsRes => this.setState({ reviews: jsRes.results }));
+  }
+
   render(){
     return(
       <div class="searchable-movie-reviews">
