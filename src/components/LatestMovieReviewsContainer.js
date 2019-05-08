@@ -12,6 +12,15 @@ export default class LatestMovieReviewsContainer extends Component {
     reviews: []
   }
 
+  componentDidMount(){
+    fecth(URL).then(res=>res.json)
+    .then(data=>{
+      this.setState({
+        reviews: data.results
+      });
+    })
+  }
+
   render(){
     return(
       <div class="latest-movie-reviews">
