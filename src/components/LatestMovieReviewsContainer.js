@@ -16,7 +16,7 @@ export default class LatestMovieReviewsContainer extends React.PureComponent {
     fetch(URL).then(res=>res.json)
     .then(data=>{
       this.setState({
-        reviews: data.results
+        reviews: data.results || []
       });
     });
   }
