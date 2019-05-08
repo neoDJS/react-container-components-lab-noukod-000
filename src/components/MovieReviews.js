@@ -9,4 +9,8 @@ const MovieReviews = ({reviews})=>{
   )
 }
 
+MovieReviews.propsDefault = {
+    reviews: []
+}
+
 export default MovieReviews;
