@@ -21,15 +21,17 @@ export default class SearchableMovieReviewsContainer extends Component {
         .then(data => this.setState({ reviews: data.results }));
   }
 
+  handleChange = event => this.setState({ search: event.target.value });
+
   render(){
     return(
       <div class="searchable-movie-reviews">
         <form onSubmit={this.handleSubmit}>
-          Search Movie Reviews:<br/>
+          Search Movie Reviews:
           <input
               type="text"
               onChange={ this.handleChange }
-              value={this.state.searchTerm}/>
+              value={this.state.search}/>
           <button type="submit">Submit</button>
         </form>
         <MovieReviews />
