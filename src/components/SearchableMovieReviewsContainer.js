@@ -28,7 +28,7 @@ export default class SearchableMovieReviewsContainer extends Component {
           Search Movie Reviews:<br/>
           <input
               type="text"
-              onChange={ this.handleChange } 
+              onChange={ this.handleChange }
               value={this.state.searchTerm}/>
           <button type="submit">Submit</button>
         </form>
