@@ -11,3 +11,12 @@ export default class SearchableMovieReviewsContainer extends Component {
   state = {
     reviews: []
   }
+
+  render(){
+    return(
+      <div class="latest-movie-reviews">
+        <MovieReviews />
+      </div>
+    );
+  }
+}
