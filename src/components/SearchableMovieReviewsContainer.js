@@ -18,7 +18,7 @@ export default class SearchableMovieReviewsContainer extends Component {
 
         fetch(URL.concat('&query=',this.state.search))
         .then(res => res.json())
-        .then(jsRes => this.setState({ reviews: jsRes.results }));
+        .then(data => this.setState({ reviews: data.results }));
   }
 
   render(){
