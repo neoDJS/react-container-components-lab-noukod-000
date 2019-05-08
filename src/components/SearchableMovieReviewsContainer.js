@@ -14,7 +14,7 @@ export default class SearchableMovieReviewsContainer extends Component {
 
   render(){
     return(
-      <div class="latest-movie-reviews">
+      <div class="searchable-movie-reviews">
         <MovieReviews />
       </div>
     );
