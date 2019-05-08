@@ -9,4 +9,4 @@ const MovieReviews = (reviews)=>{
   )
 }
 
-export default MovieReviews
+export default MovieReviews;
