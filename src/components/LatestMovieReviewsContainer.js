@@ -23,7 +23,7 @@ export default class LatestMovieReviewsContainer extends React.PureComponent {
 
   render(){
     return(
-      <div class="latest-movie-reviews">
+      <div className="latest-movie-reviews">
         <MovieReviews reviews={this.state.reviews} />
       </div>
     );
