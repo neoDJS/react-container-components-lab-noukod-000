@@ -18,7 +18,7 @@ export default class LatestMovieReviewsContainer extends Component {
       this.setState({
         reviews: data.results
       });
-    })
+    });
   }
 
   render(){
