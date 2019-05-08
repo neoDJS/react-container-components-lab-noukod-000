@@ -17,7 +17,7 @@ export default class SearchableMovieReviewsContainer extends React.PureComponent
         event.preventDefault();
         fetch(URL.concat('&query=',this.state.searchTerm))
         .then(res => res.json())
-        .then(data => this.setState({ reviews: data.results }));
+        .then(data => this.setState({ reviews: data.results || [] }));
   }
 
   handleChange = event => this.setState({ searchTerm: event.target.value });
