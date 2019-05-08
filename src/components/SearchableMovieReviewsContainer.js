@@ -21,7 +21,7 @@ export default class SearchableMovieReviewsContainer extends Component {
         .then(data => this.setState({ reviews: data.results }));
   }
 
-  handleChange = event => this.setState({ search: event.target.value });
+  handleChange = event => this.setState({ searchTerm: event.target.value });
 
   render(){
     return(
