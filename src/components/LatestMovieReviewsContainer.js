@@ -12,4 +12,12 @@ export default class LatestMovieReviewsContainer extends Component {
     reviews: []
   }
 
+  render(){
+    return(
+      <div class="latest-movie-reviews">
+        <MovieReviews />
+      </div>
+    );
+  }
+
 }
